@@ -13,7 +13,7 @@ class Login extends React.Component {
         </p>
          <p>
          <input
-                         type = "text"
+                         type = "password"
                          placeholder = "Enter the password"
                      />
 
