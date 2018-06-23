@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Login from './Login';
+import loginUI from './loginUI';
+import howitworks from './images/PDS1.PNG';
 //import Header from './Header'
 
 class App extends Component {
@@ -17,6 +19,11 @@ class App extends Component {
 
 <div><Login/>
 </div>
+    <div >
+    <li>
+    </li>
+       <img src ={howitworks}/>
+    </div>
       </div>
     );
   }
