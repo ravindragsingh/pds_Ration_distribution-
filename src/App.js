@@ -5,10 +5,13 @@ import Login from './Login';
 import loginUI from './loginUI';
 import howitworks from './images/PDS1.PNG';
 //import Header from './Header'
+import {BrowserRouter} from 'react-router-dom'
 
 class App extends Component {
   render() {
+
     return (
+<BrowserRouter>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -25,6 +28,10 @@ class App extends Component {
        <img src ={howitworks}/>
     </div>
       </div>
+
+</BrowserRouter>
+
+
     );
   }
 }
