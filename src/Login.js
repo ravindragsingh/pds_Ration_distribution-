@@ -28,7 +28,7 @@ class Login extends React.Component {
                      <option value="distributor">Distributor</option>
                      <option value="fps">Fair price shop</option>
                      <option value="consumer">Consumer</option>
-                                </select>
+           </select>
 
 
           </p>

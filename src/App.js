@@ -40,8 +40,8 @@ class App extends Component {
         />
 
     <div >
-    <li>
-    </li>
+    <br>
+    </br>
        <img src ={howitworks}/>
     </div>
       </div>
