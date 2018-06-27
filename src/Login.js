@@ -3,18 +3,30 @@ import React, { Component } from 'react';
 import './App.css';
 
 class Login extends React.Component {
+
+
+  state = {
+  username:'',
+  password:'',
+  type:''
+  }
+
+
   render() {
     return (
       <div>
        <p><input
                   type = "text"
                   placeholder = "Enter the username"
+                  onChange = {(event,newValue) => this.setState({username:newValue})}
+
                   />
         </p>
          <p>
          <input
                          type = "password"
                          placeholder = "Enter the password"
+            onChange = {(event,newValue) => this.setState({password:newValue})}
                      />
 
          </p>

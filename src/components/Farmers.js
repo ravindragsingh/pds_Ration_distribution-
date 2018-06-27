@@ -9,7 +9,7 @@ class Farmers extends Component {
     <div>
     <h2 className = "heading">You are logged in as Farmer</h2>
 
-   <p>Select whom you want to transfer the goods</p>
+   <p>Select who you want to transfer the goods</p>
                 <select>
                          <option value="none" disabled>Select category</option>
                          <option value="farmer">Farmer</option>
