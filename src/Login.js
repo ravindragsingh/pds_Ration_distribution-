@@ -1,56 +1,89 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './App.css';
 
 class Login extends React.Component {
 
+    state = {
+        userName: '',
+        password: '',
+        category: ''
+    };
 
-  state = {
-  username:'',
-  password:'',
-  type:''
-  }
+    onFormSubmit = (e) => {
+        e.preventDefault();
+        let {userName, password, category} = this.state;
+        if(userName.valueOf() !== "" && password.valueOf() !== "" ){
 
+            this.props.onEvent(userName.valueOf(), password.valueOf(), category.valueOf());
+        }
+    };
 
-  render() {
-    return (
-      <div>
-       <p><input
-                  type = "text"
-                  placeholder = "Enter the username"
-                  onChange = {(event,newValue) => this.setState({username:newValue})}
+    handleUserChange = (e) => {
+        e.preventDefault();
+        this.setState({
+            userName: e.target.value
+        })
+    };
 
-                  />
-        </p>
-         <p>
-         <input
-                         type = "password"
-                         placeholder = "Enter the password"
-            onChange = {(event,newValue) => this.setState({password:newValue})}
-                     />
+    handlePassChange = (e) => {
+        e.preventDefault();
+        this.setState({
+            password: e.target.value
+        })
+    };
 
-         </p>
+    handleCateChange = (e) => {
+        e.preventDefault();
+        this.setState({
+            category: e.target.value
+        })
+    };
 
-          <p>
-          <select>
-                     <option value="none" disabled>Select category</option>
-                     <option value="farmer">Farmer</option>
-                     <option value="procurement">Procurement</option>
-                     <option value="storage">Storage</option>
-                     <option value="distributor">Distributor</option>
-                     <option value="fps">Fair price shop</option>
-                     <option value="consumer">Consumer</option>
-           </select>
+    render() {
 
+        let {userName, password, category} = this.state;
 
-          </p>
-
-        <div > <button class = "button">Login </button></div>
-
-
-      </div>
-    )
-  }
+        return (
+            <div>
+                <form onSubmit={this.onFormSubmit}>
+                    <p>
+                        <input
+                            type="text"
+                            value={userName}
+                            placeholder="Enter the username"
+                            onChange={this.handleUserChange}
+                        />
+                    </p>
+                    <p>
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={this.handlePassChange}
+                            placeholder="Enter the password"
+                        />
+                    </p>
+                    <p>
+                        <select
+                            value={category}
+                            onChange={this.handleCateChange}
+                        >
+                            <option value="none" >Select category</option>
+                            <option value="farmer">Farmer</option>
+                            <option value="procurement">Procurement</option>
+                            <option value="storage">Storage</option>
+                            <option value="distributor">Distributor</option>
+                            <option value="fps">Fair price shop</option>
+                            <option value="consumer">Consumer</option>
+                        </select>
+                    </p>
+                    <div>
+                        <button className="button">Login</button>
+                    </div>
+                </form>
+            </div>
+        )
+    }
 }
 
-export default Login
+export default Login;
