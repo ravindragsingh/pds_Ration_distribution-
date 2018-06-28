@@ -6,6 +6,7 @@ import howitworks from './images/PDS1.PNG';
 import {Route} from 'react-router-dom';
 import Farmers from './components/Farmers';
 import loginCheck from './api/loginAuth';
+import AppBar from './components/AppBar'
 
 class App extends Component {
 
@@ -20,11 +21,12 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo"/>
-                    <h1 className="App-title">Blockchain Based Ration Distribution System</h1>
+                    <AppBar text ="Blockchain Based Ration Distribution System"/>
+                    <h1 className="App-title"></h1>
                 </header>
                 <p className="App-intro">
                 </p>
-                <Route path="/login"
+                <Route path="/"
                        render={
                            () => {
                                return (
