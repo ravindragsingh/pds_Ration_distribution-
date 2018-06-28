@@ -26,7 +26,7 @@ class App extends Component {
                 </header>
                 <p className="App-intro">
                 </p>
-                <Route path="/"
+                <Route exact path="/"
                        render={
                            () => {
                                return (
