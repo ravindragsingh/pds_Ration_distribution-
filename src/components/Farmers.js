@@ -2,17 +2,27 @@ import React, {Component} from 'react';
 //import logo from './logo.svg';
 import './comp.css';
 import {Route} from 'react-router-dom';
-import AppBar from './AppBar'
+import AppBar from './AppBar';
+import axios from 'axios'
 
 class Farmers extends Component {
    state ={
    type:'',
    quantity:'',
    ownerName:'',
+ //  persons:'',
    ownerType:''
    }
 
+componentDidMount(){
+axios.get(`http://pds-blockchain.mybluemix.net/get-all-produce?userName=farmer@poc&ownerId=1001`)
+      .then(res => {
+        const persons = res.data;
+        this.setState({ persons });
+        console.log(persons);
+      })
 
+}
 
     render() {
         return (
