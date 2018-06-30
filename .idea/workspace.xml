@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list id="f6cd2a38-e741-4f04-9264-91a2896b45db" name="Redirecting to farmer after login" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/loginAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/loginAuth.js" afterDir="false" />
+    </list>
     <list default="true" id="d6ab3413-229d-4e47-8ccf-eae0c0372f19" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/loginAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/loginAuth.js" afterDir="false" />
     </list>
     <list id="cfd13fcd-f6da-4553-b208-af23762b4e88" name="Included GetAllProduct API" comment="">
       <change afterPath="$PROJECT_DIR$/src/api/getAllProduce.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/loginAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/loginAuth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Farmers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Farmers.js" afterDir="false" />
     </list>
     <ignored path=".idea/" />
@@ -24,38 +29,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+            <state relative-caret-position="731">
+              <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginAuth.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loginAuth.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/loginAuth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="85">
+              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getAllProduce.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/getAllProduce.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="Farmers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Farmers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="187">
+              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -75,9 +76,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="api_farmer_routing" />
+        <entry key="$PROJECT_DIR$" value="redirectFromLogin" />
       </map>
     </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="get_all_produce" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -87,6 +101,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/Login.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/api/getAllProduce.js" />
         <option value="$PROJECT_DIR$/src/components/Farmers.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/api/loginAuth.js" />
@@ -105,6 +120,31 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/App.js">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="3" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+        <range start1="5" end1="6" start2="7" end2="7" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+        <range start1="8" end1="9" start2="9" end2="11" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+        <range start1="12" end1="12" start2="14" end2="20" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+        <range start1="15" end1="16" start2="23" end2="34" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+        <range start1="19" end1="20" start2="37" end2="51" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+        <range start1="21" end1="21" start2="52" end2="53" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
+        <range start1="23" end1="24" start2="55" end2="56" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+        <range start1="28" end1="51" start2="60" end2="74" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/api/loginAuth.js">
+      <ranges>
+        <range start1="1" end1="2" start2="1" end2="1" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
+        <range start1="3" end1="5" start2="2" end2="2" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
+        <range start1="6" end1="14" start2="3" end2="9" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+        <range start1="20" end1="25" start2="15" end2="17" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
+        <range start1="26" end1="27" start2="18" end2="18" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
+        <range start1="30" end1="31" start2="21" end2="21" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
+      </ranges>
+    </file>
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
@@ -171,7 +211,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Included_GetAllProduct_API.patch" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Redirecting_to_farmer_after_login.patch" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -241,6 +281,7 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="d6ab3413-229d-4e47-8ccf-eae0c0372f19" name="Default" comment="" />
       <changelist id="cfd13fcd-f6da-4553-b208-af23762b4e88" name="Included GetAllProduct API" comment="" />
+      <changelist id="f6cd2a38-e741-4f04-9264-91a2896b45db" name="Redirecting to farmer after login" comment="" />
       <created>1527996805851</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -307,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530240318267</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated_getall">
+      <created>1530296581254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1530296581254</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -326,7 +374,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32992035" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32992035" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4978903" visible="true" weight="0.16535433" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4978903" visible="true" weight="0.26929134" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
@@ -392,7 +440,8 @@
     <MESSAGE value="updated with all changes" />
     <MESSAGE value="exactpath" />
     <MESSAGE value="call" />
-    <option name="LAST_COMMIT_MESSAGE" value="call" />
+    <MESSAGE value="updated_getall" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated_getall" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.js">
@@ -689,29 +738,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="342">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Farmers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+        <state relative-caret-position="187">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/loginAuth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="85">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/getAllProduce.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
         </state>
       </provider>
     </entry>

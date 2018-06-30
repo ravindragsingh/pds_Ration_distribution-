@@ -1,8 +1,5 @@
 import axios from 'axios';
-
 const LOGIN = `http://pds-blockchain.mybluemix.net/login`;
-
-
 let loginCheck = function (userName, password, category) {
 
     // let hardCredentials = {
@@ -24,11 +21,9 @@ let loginCheck = function (userName, password, category) {
         return res;
 
     }, function (err) {
-
         throw new Error('Unable to login');
     });
 };
-
 export default loginCheck;
 
 
