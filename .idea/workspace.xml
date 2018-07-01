@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="f6cd2a38-e741-4f04-9264-91a2896b45db" name="Redirecting to farmer after login" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/loginAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/loginAuth.js" afterDir="false" />
-    </list>
-    <list default="true" id="d6ab3413-229d-4e47-8ccf-eae0c0372f19" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/loginAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/loginAuth.js" afterDir="false" />
-    </list>
     <list id="cfd13fcd-f6da-4553-b208-af23762b4e88" name="Included GetAllProduct API" comment="">
       <change afterPath="$PROJECT_DIR$/src/api/getAllProduce.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Farmers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Farmers.js" afterDir="false" />
+    </list>
+    <list default="true" id="d6ab3413-229d-4e47-8ccf-eae0c0372f19" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="f6cd2a38-e741-4f04-9264-91a2896b45db" name="Redirecting to farmer after login" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/loginAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/loginAuth.js" afterDir="false" />
     </list>
     <ignored path=".idea/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -29,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+            <state relative-caret-position="221">
+              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -41,22 +39,44 @@
       <file leaf-file-name="loginAuth.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/loginAuth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="34">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="getAllProduce.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/getAllProduce.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="109" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="109" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="Farmers.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Farmers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Farmers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+            <state relative-caret-position="539">
+              <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1037">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comp.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/comp.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -76,7 +96,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="redirectFromLogin" />
+        <entry key="$PROJECT_DIR$" value="6_30_API_connectivity" />
       </map>
     </option>
     <favorite-branches>
@@ -102,9 +122,9 @@
         <option value="$PROJECT_DIR$/src/Login.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/api/getAllProduce.js" />
-        <option value="$PROJECT_DIR$/src/components/Farmers.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/api/loginAuth.js" />
+        <option value="$PROJECT_DIR$/src/components/Farmers.js" />
       </list>
     </option>
   </component>
@@ -120,31 +140,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/App.js">
-      <ranges>
-        <range start1="1" end1="1" start2="1" end2="3" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="5" end1="6" start2="7" end2="7" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="8" end1="9" start2="9" end2="11" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="12" end1="12" start2="14" end2="20" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="15" end1="16" start2="23" end2="34" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="19" end1="20" start2="37" end2="51" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="21" end1="21" start2="52" end2="53" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
-        <range start1="23" end1="24" start2="55" end2="56" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="28" end1="51" start2="60" end2="74" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/api/loginAuth.js">
-      <ranges>
-        <range start1="1" end1="2" start2="1" end2="1" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
-        <range start1="3" end1="5" start2="2" end2="2" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
-        <range start1="6" end1="14" start2="3" end2="9" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="20" end1="25" start2="15" end2="17" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="26" end1="27" start2="18" end2="18" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
-        <range start1="30" end1="31" start2="21" end2="21" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
-      </ranges>
-    </file>
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
@@ -165,8 +160,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,6 +195,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,9 +367,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021097" side_tool="true" weight="0.32992035" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32992035" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32992035" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4978903" visible="true" weight="0.26929134" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32992035" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4978903" weight="0.17322835" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
@@ -382,22 +377,75 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Execute Anonymous" order="7" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info id="Query Editor" order="2" />
-      <window_info anchor="bottom" id="SFDX" order="7" />
-      <window_info anchor="bottom" id="Log Manager" order="7" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Salesforce" order="7" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Query Editor" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021097" side_tool="true" weight="0.32992035" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="SFDX" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Debug Logs" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32992035" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Salesforce" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32992035" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4978903" visible="true" weight="0.26929134" />
+      <window_info anchor="bottom" id="Execute Anonymous" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Log Manager" order="7" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32992035" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Log Manager" order="8" />
+      <window_info anchor="bottom" id="SFDX" order="9" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4978903" visible="true" weight="0.17322835" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="UI Designer" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021097" side_tool="true" weight="0.32992035" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Query Editor" order="7" />
+      <window_info anchor="bottom" id="Debug Logs" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32992035" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Salesforce" order="14" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info anchor="bottom" id="Execute Anonymous" order="15" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -685,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -722,13 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/comp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -743,27 +777,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Farmers.js">
+    <entry file="file://$PROJECT_DIR$/src/api/loginAuth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/loginAuth.js">
+    <entry file="file://$PROJECT_DIR$/src/components/comp.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="714">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/getAllProduce.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="109" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+        <state relative-caret-position="221">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Farmers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
         </state>
       </provider>
     </entry>
