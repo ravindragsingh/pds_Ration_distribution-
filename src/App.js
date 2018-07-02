@@ -8,6 +8,8 @@ import howitworks from './images/PDS1.PNG';
 import Farmers from './components/Farmers';
 import loginCheck from './api/loginAuth';
 import AppBar from './components/AppBar';
+import CreateProduce from './components/CreateProduce';
+
 
 
 
@@ -75,6 +77,7 @@ class App extends Component {
                            }
                     />
                     <Route path="/farmer" key='2' component={Farmers}/>
+                    <Route path="/createProduce" key='3' component={CreateProduce}/>
                 </Switch>
                 <div>
                     <br>
