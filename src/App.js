@@ -20,7 +20,7 @@ class App extends Component {
         return (
             <div className="App">
 
-                <header className="App-header">
+                <header className="appHeader">
                     <img src={logo} className="App-logo" alt="logo"/>
                     <AppBar text ="Blockchain Based Ration Distribution System"/>
                     <h1 className="App-title"></h1>
@@ -53,7 +53,7 @@ class App extends Component {
                 <div>
                     <br>
                     </br>
-                    <img src={howitworks}/>
+
                 </div>
             </div>
 
