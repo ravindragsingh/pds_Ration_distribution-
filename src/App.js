@@ -9,6 +9,7 @@ import Farmers from './components/Farmers';
 import loginCheck from './api/loginAuth';
 import AppBar from './components/AppBar';
 import CreateProduce from './components/CreateProduce';
+import TransferProduce from './components/TransferProduce';
 
 
 
@@ -78,6 +79,7 @@ class App extends Component {
                     />
                     <Route path="/farmer" key='2' component={Farmers}/>
                     <Route path="/createProduce" key='3' component={CreateProduce}/>
+                    <Route path="/transferProduce" key='4' component={TransferProduce}/>
                 </Switch>
                 <div>
                     <br>

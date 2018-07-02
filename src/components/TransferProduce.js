@@ -5,51 +5,48 @@ import React, {Component} from 'react';
              import getAllProduce from '../api/getAllProduce';
              import axios from 'axios';
 
-             class CreateProduce extends Component {
+             class TransferProduce extends Component {
 
              state ={
-                     createProduce:false,
-                     cUserName:"",      //available in Login
-                     cProduceId:"",     // in GET reponse
-                     cProduceType:"",
-                     cProduceQuantity:"",
-                     cOwnerType:"",     // in GET reponse
-                     cOwnerId:""        // in GET reponse
-
-             }
+                     transferProduce:false,
+                     tUserName:"",      //available in Login
+                     tProduceId:"",     // in GET reponse
+                     tNewOwnerType:"",
+                     tNewOwnerId:""
+                    }
 
                onFormSubmit = (e) => {
                      e.preventDefault();
-                     let {cProduceType, cProduceQuantity, cProduceId} = this.state;
-                     if(cProduceType.valueOf() !== "" && cProduceQuantity.valueOf() !== "" && cProduceId.valueOf() !== "" ){
+                     let {tProduceId, tNewOwnerType, tNewOwnerId} = this.state;
+                     if(tProduceId.valueOf() !== "" && tNewOwnerType.valueOf() !== "" && tNewOwnerId.valueOf() !== "" ){
 
-                         this.props.onEvent(cProduceType.valueOf(), cProduceQuantity.valueOf(),cProduceId.valueOf());
+                         this.props.onEvent(tProduceId.valueOf(), tNewOwnerType.valueOf(),tNewOwnerId.valueOf());
                      }
                  };
 
                  handleProduceChange = (e) => {
                      e.preventDefault();
                      this.setState({
-                         cProduceType: e.target.value
+                         tProduceId: e.target.value
                      })
                  };
-                  handleIdChange = (e) => {
+                  handleNOwnerChange = (e) => {
                                       e.preventDefault();
                                       this.setState({
-                                          cProduceId: e.target.value
+                                          tNewOwnerType: e.target.value
                                       })
                                   };
 
-                 handleQuantityChange = (e) => {
+                 handleNIdChange = (e) => {
                      e.preventDefault();
                      this.setState({
-                         cProduceQuantity: e.target.value
+                         tNewOwnerId: e.target.value
                      })
                  };
 
                  render() {
 
-                    let {cProduceType, cProduceQuantity, cProduceId} = this.state;
+                     let {tProduceId, tNewOwnerType, tNewOwnerId} = this.state;
 
                      return (
 
@@ -58,28 +55,28 @@ import React, {Component} from 'react';
                                                 <p>
                                                     <input
                                                         type="type"
-                                                        value={cProduceType}
-                                                        placeholder="Enter the product Type"
+                                                        value={tProduceId}
+                                                        placeholder="Enter the produce Type"
                                                         onChange={this.handleProduceChange}
                                                     />
 
                                                     <input
                                                          type="quantity"
-                                                         value={cProduceQuantity}
-                                                         onChange={this.handleQuantityChange}
+                                                         value={tNewOwnerType}
+                                                         onChange={this.handleNOwnerChange}
                                                          placeholder="Enter the Produce Quantity"
                                                     />
 
                                                 <input
                                                          type="Id"
-                                                         value={cProduceId}
-                                                         onChange={this.handleIdChange}
+                                                         value={tNewOwnerId}
+                                                         onChange={this.handleNIdChange}
                                                          placeholder="Enter the Produce Id"
                                                  />
                                                 </p>
 
                                                 <div>
-                                                    <button className="button">Click to add</button>
+                                                    <button className="button">Click to Transfer</button>
                                                 </div>
                                             </form>
 
@@ -90,4 +87,4 @@ import React, {Component} from 'react';
     }
 }
 
-export default CreateProduce;
+export default TransferProduce;
