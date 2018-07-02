@@ -54,4 +54,12 @@
     text-align: left;
     padding: 8px;
      border: 2px solid #FFFF;
+
 }
+.tdData {
+    text-align: left;
+    padding: 8px;
+     border: 2px solid #FFFF;
+     background-color: #f2f2f2
+}
+
