@@ -1,48 +1,91 @@
 import React, {Component} from 'react';
-//import logo from './logo.svg';
-import './comp.css';
-import {Route} from 'react-router-dom';
-import AppBar from './AppBar';
-import axios from 'axios'
+             //import logo from './logo.svg';
+             import './comp.css';
+             import AppBar from './AppBar';
+             import Login from '../Login'
+             import getAllProduce from '../api/getAllProduce';
+             import axios from 'axios';
 
-class Farmers extends Component {
-   state ={
-   type:'',
-   quantity:'',
-   ownerName:'',
- //  persons:'',
-   ownerType:''
-   }
+             class Farmers extends Component {
 
-componentDidMount(){
-axios.get(`http://pds-blockchain.mybluemix.net/get-all-produce?userName=farmer@poc&ownerId=1001`)
-      .then(res => {
-        const persons = res.data;
-        this.setState({ persons });
-        console.log(persons);
+             state ={
+                     isGetAll:false,
+             //        userName: '',
+               //      userID: '',
+                     type: '',
+                     foodType:'',
+                     foodQuantity:'',
+                     ownerName:'',
+                     ownerType:'',
+                     transferCategory:''
+
+             }
+
+   constructor(props) {
+                super(props);
+                 let ownerName = props.name;
+                 var uniqueId = props.id;
+        console.log(ownerName); //here ownerName from POST service is received
+                    }
+                 componentDidMount() {
+                    axios.get('http://pds-blockchain.mybluemix.net/get-all-produce?userName='+this.props.name+'&ownerId='+this.props.id)
+                      .then(res => {
+                      //console.log(res.data[0].quantity);
+                     // console.log(this.props.id)
+                        this.setState({  isGetAll:true,
+                                           foodQuantity: res.data[0].quantity,
+                                        foodType: res.data[0].type,
+                                        ownerName:this.props.name,
+                                         ownerType:res.data[0].owner.type});
       })
+  }
 
-}
+                 render() {
 
-    render() {
-        return (
-            <div>
+                  let {transferCategory} = this.state;
+                     return (
+                     //console.log(ownerName);
+                         <div className="body">
+                   <h1>You are logged in as {this.props.text}</h1>
+                    <h3> Items present in your inventory</h3>
+                             <table className = "table">
+                                  <tr className = "td">
+                                      <th>Owner Name</th>
+                                      <th>Owner Type</th>
+                                      <th>Food Type</th>
+                                      <th>Quantity</th>
 
-                <AppBar text = "You are logged in as Farmer"/>
+                                  </tr>
+                                   <tr className = "tdData">
+                                         <td>{this.state.ownerName}</td>
+                                         <td>{this.state.ownerType}</td>
+                                         <td>{this.state.foodType}</td>
+                                         <td>{this.state.foodQuantity}</td>
 
+                                     </tr>
+                             </table>
+                <ol>
+                  <button>Select to transfer goods</button>
+                <select
+                value={transferCategory}
+                >
+                                    <option value="none">Select category</option>
+                                    <option value="farmer">Farmer</option>
+                                    <option value="procurement">Procurement</option>
+                                    <option value="storage">Storage</option>
+                                    <option value="distributor">Distributor</option>
+                                    <option value="fps">Fair price shop</option>
+                                    <option value="consumer">Consumer</option>
+                                </select>
 
-                <p>Select whom you want to transfer the goods</p>
-                <select>
-                    <option value="none" >Select category</option>
-                    <option value="farmer">Farmer</option>
-                    <option value="procurement">Procurement</option>
-                    <option value="storage">Storage</option>
-                    <option value="distributor">Distributor</option>
-                    <option value="fps">Fair price shop</option>
-                    <option value="consumer">Consumer</option>
-                </select>
-                <br></br>
-                <button> Transfer Goods</button>
+                </ol>
+
+                <button> Transfer Produce</button>
+                <button> Create Produce</button>
+                <ol>
+                <button onClick={()=>{  <div><Login/></div> }}>Logout</button>
+                </ol>
+
 
             </div>
 

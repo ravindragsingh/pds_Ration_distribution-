@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list id="f6cd2a38-e741-4f04-9264-91a2896b45db" name="Redirecting to farmer after login" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/loginAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/loginAuth.js" afterDir="false" />
+    </list>
     <list id="cfd13fcd-f6da-4553-b208-af23762b4e88" name="Included GetAllProduct API" comment="">
       <change afterPath="$PROJECT_DIR$/src/api/getAllProduce.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -8,14 +13,8 @@
       <change beforePath="$PROJECT_DIR$/src/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Farmers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Farmers.js" afterDir="false" />
     </list>
-    <list id="f6cd2a38-e741-4f04-9264-91a2896b45db" name="Redirecting to farmer after login" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/loginAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/loginAuth.js" afterDir="false" />
-    </list>
-    <list default="true" id="d6ab3413-229d-4e47-8ccf-eae0c0372f19" name="Default" comment="">
+    <list default="true" id="d6ab3413-229d-4e47-8ccf-eae0c0372f19" name="Default" comment="farmers update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/comp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comp.css" afterDir="false" />
     </list>
     <ignored path=".idea/" />
@@ -68,8 +67,8 @@
       <file leaf-file-name="Farmers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Farmers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="77" column="78" lean-forward="true" selection-start-line="77" selection-start-column="78" selection-end-line="77" selection-end-column="78" />
+            <state relative-caret-position="476">
+              <caret line="58" column="55" lean-forward="true" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -110,7 +109,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="6_30_API_connectivity" />
+        <entry key="$PROJECT_DIR$" value="7_1_GET_All" />
       </map>
     </option>
     <favorite-branches>
@@ -155,23 +154,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/App.js">
-      <ranges>
-        <range start1="1" end1="1" start2="1" end2="3" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="5" end1="6" start2="7" end2="7" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="8" end1="9" start2="9" end2="11" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="10" end1="10" start2="12" end2="18" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="12" end1="14" start2="20" end2="29" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="15" end1="16" start2="30" end2="39" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="19" end1="21" start2="42" end2="56" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="22" end1="23" start2="57" end2="58" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
-        <range start1="24" end1="25" start2="59" end2="60" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="29" end1="52" start2="64" end2="78" changelist="f6cd2a38-e741-4f04-9264-91a2896b45db" />
-        <range start1="55" end1="56" start2="81" end2="82" changelist="d6ab3413-229d-4e47-8ccf-eae0c0372f19" />
-      </ranges>
-    </file>
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
@@ -417,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530501877446</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="farmers update">
+      <created>1530545226921</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1530545226921</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -542,7 +531,8 @@
     <MESSAGE value="addingTableInFarmers" />
     <MESSAGE value="CSSofTable" />
     <MESSAGE value="addedDropdownValue" />
-    <option name="LAST_COMMIT_MESSAGE" value="addedDropdownValue" />
+    <MESSAGE value="farmers update" />
+    <option name="LAST_COMMIT_MESSAGE" value="farmers update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.js">
@@ -867,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Farmers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="77" column="78" lean-forward="true" selection-start-line="77" selection-start-column="78" selection-end-line="77" selection-end-column="78" />
+        <state relative-caret-position="476">
+          <caret line="58" column="55" lean-forward="true" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
         </state>
       </provider>
     </entry>

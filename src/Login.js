@@ -7,7 +7,8 @@ class Login extends React.Component {
     state = {
         userName: '',
         password: '',
-        category: ''
+        category: '',
+        type: ''
     };
 
     onFormSubmit = (e) => {
