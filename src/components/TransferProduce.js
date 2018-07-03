@@ -1,88 +1,79 @@
 import React, {Component} from 'react';
-             import './comp.css';
-             import AppBar from './AppBar';
-             import Login from '../Login'
-             import getAllProduce from '../api/getAllProduce';
-             import axios from 'axios';
+import './comp.css';
+import transferProduce from '../api/postTransferProduce';
 
-             class TransferProduce extends Component {
+class TransferProduce extends Component {
 
-             state ={
-                     transferProduce:false,
-                     tUserName:"",      //available in Login
-                     tProduceId:"",     // in GET reponse
-                     tNewOwnerType:"",
-                     tNewOwnerId:""
-                    }
+    state = {
+        transferProduce: false,   // in GET reponse
+        tNewOwnerID: "",
+        tNewOwnerType: ""
+    };
 
-               onFormSubmit = (e) => {
-                     e.preventDefault();
-                     let {tProduceId, tNewOwnerType, tNewOwnerId} = this.state;
-                     if(tProduceId.valueOf() !== "" && tNewOwnerType.valueOf() !== "" && tNewOwnerId.valueOf() !== "" ){
+    constructor(props) {
+        super(props);
+    }
 
-                         this.props.onEvent(tProduceId.valueOf(), tNewOwnerType.valueOf(),tNewOwnerId.valueOf());
-                     }
-                 };
+    onFormSubmit = (e) => {
+        e.preventDefault();
+        let that = this;
+        let { tNewOwnerID,tNewOwnerType} = this.state;
+        if (tNewOwnerID.valueOf() !== "" && tNewOwnerType.valueOf() !== "") {
+            transferProduce(this.props.ownerName, this.props.produceID, tNewOwnerType, tNewOwnerID).then((res) => {
+                that.setState({
+                    transferProduce: true,
+                });
+            })
+        }
+    };
 
-                 handleProduceChange = (e) => {
-                     e.preventDefault();
-                     this.setState({
-                         tProduceId: e.target.value
-                     })
-                 };
-                  handleNOwnerChange = (e) => {
-                                      e.preventDefault();
-                                      this.setState({
-                                          tNewOwnerType: e.target.value
-                                      })
-                                  };
+    handleOwnerID = (e) => {
+        e.preventDefault();
+        this.setState({
+            tNewOwnerID: e.target.value
+        })
+    };
+    handleOwnerType = (e) => {
+            e.preventDefault();
+            this.setState({
+                tNewOwnerType: e.target.value
+            })
+        };
 
-                 handleNIdChange = (e) => {
-                     e.preventDefault();
-                     this.setState({
-                         tNewOwnerId: e.target.value
-                     })
-                 };
+    render() {
 
-                 render() {
+        let {tNewOwnerID, tNewOwnerType} = this.state;
 
-                     let {tProduceId, tNewOwnerType, tNewOwnerId} = this.state;
+        if(!transferProduce){
+            return (
+                <div>
+                    Transfer Succesfull!
+                </div>);
+        }
 
-                     return (
+        return (
+            <div className="body">
+                <form onSubmit={this.onFormSubmit}>
+                    <p>
+                        <input
+                            type="quantity"
+                            value={tNewOwnerID}
+                            onChange={this.handleOwnerID}
+                            placeholder="Enter the New Owner ID"
+                        />
+                        <input
+                                                    type="quantity"
+                                                    value={tNewOwnerType}
+                                                    onChange={this.handleOwnerType}
+                                                    placeholder="Enter the New Owner Type"
+                                                />
+                    </p>
 
-                         <div className="body">
-                            <form onSubmit={this.onFormSubmit}>
-                                                <p>
-                                                    <input
-                                                        type="type"
-                                                        value={tProduceId}
-                                                        placeholder="Enter the produce Type"
-                                                        onChange={this.handleProduceChange}
-                                                    />
-
-                                                    <input
-                                                         type="quantity"
-                                                         value={tNewOwnerType}
-                                                         onChange={this.handleNOwnerChange}
-                                                         placeholder="Enter the Produce Quantity"
-                                                    />
-
-                                                <input
-                                                         type="Id"
-                                                         value={tNewOwnerId}
-                                                         onChange={this.handleNIdChange}
-                                                         placeholder="Enter the Produce Id"
-                                                 />
-                                                </p>
-
-                                                <div>
-                                                    <button className="button">Click to Transfer</button>
-                                                </div>
-                                            </form>
-
-
-                         </div>
-
+                    <div>
+                        <button className="button">Click to Transfer</button>
+                    </div>
+                </form>
+            </div>
         )
     }
 }

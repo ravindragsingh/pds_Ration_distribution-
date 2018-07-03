@@ -13,12 +13,6 @@ import TransferProduce from './components/TransferProduce';
 
 
 
-
-//var sectionStyle = {
-//  width: "100%",
-//  height: "400px",
-// backgroundImage: `url(${Background})`
-//};
 class App extends Component {
 
     state = {
