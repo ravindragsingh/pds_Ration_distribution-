@@ -2,8 +2,9 @@ import React, {Component} from 'react';
              import './comp.css';
              import AppBar from './AppBar';
              import Login from '../Login'
-             import getAllProduce from '../api/getAllProduce';
+             //import getAllProduce from '../api/getAllProduce';
              import axios from 'axios';
+             import createProduce from '../api/postCreateProduce';
 
              class CreateProduce extends Component {
 
@@ -22,14 +23,20 @@ import React, {Component} from 'react';
              super(props);
              }
 
+
                onFormSubmit = (e) => {
                      e.preventDefault();
                      let that = this;
-                     let {cProduceType, cProduceQuantity, cProduceId} = this.state;
-                     if(cProduceType.valueOf() !== "" && cProduceQuantity.valueOf() !== "" && cProduceId.valueOf() !== "" ){
 
-                         this.props.onEvent(cProduceType.valueOf(), cProduceQuantity.valueOf(),cProduceId.valueOf());
-                     }
+                     let {cProduceType, cProduceQuantity, cProduceId} = this.state;
+
+                     if(cProduceType.valueOf() !== "" && cProduceQuantity.valueOf() !== "" && cProduceId.valueOf() !== "" ){
+                    createProduce(this.props.userName, cProduceId, cProduceType,cProduceQuantity,this.props.ownerType,this.props.ownerId).then((res) => {
+                that.setState({
+                    transferProduce: true,
+                });
+            })
+               }
                  };
 
                  handleTypeChange = (e) => {
@@ -64,8 +71,8 @@ import React, {Component} from 'react';
                                                     <input
                                                         type="type"
                                                         value={cProduceType}
-                                                        placeholder="Enter the product Type"
-                                                        onChange={this.handleProduceChange}
+                                                        placeholder="Enter the produce Type"
+                                                        onChange={this.handleTypeChange}
                                                     />
 
                                                     <input

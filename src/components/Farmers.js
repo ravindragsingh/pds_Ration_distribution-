@@ -6,6 +6,7 @@ import Login from '../Login'
 import getAllProduce from '../api/getAllProduce';
 import axios from 'axios';
 import TransferProduce from "./TransferProduce";
+import CreateProduce from "./CreateProduce";
 
 class Farmers extends Component {
 
@@ -25,7 +26,8 @@ class Farmers extends Component {
         super(props);
         let ownerName = props.name;
         var uniqueId = props.id;
-        console.log(ownerName); //here ownerName from POST service is received
+        let type = props.text;
+        console.log(type); //here ownerName from POST service is received
     }
 
     componentDidMount() {
@@ -36,6 +38,7 @@ class Farmers extends Component {
                 this.setState({
                     isGetAll: true,
                     transferProduce: false,
+                    createProduce:false,
                     foodQuantity: res.data[0].quantity,
                     foodType: res.data[0].type,
                     ownerName: this.props.name,
@@ -53,6 +56,14 @@ class Farmers extends Component {
 
     };
 
+    handleCreateProduce = () => {
+
+            this.setState({
+                createProduce: true
+            });
+
+        };
+
     render() {
 
         let {transferCategory} = this.state;
@@ -65,6 +76,15 @@ class Farmers extends Component {
                 </div>
             )
         }
+
+        if(this.state.createProduce)
+                {
+                    return (
+                        <div>
+                            <CreateProduce userName={this.props.name} ownerId={this.props.id} ownerType={this.props.text}/>
+                        </div>
+                    )
+                }
         return (
             //console.log(ownerName);
             <div className="body">
@@ -103,7 +123,7 @@ class Farmers extends Component {
                 </ol>
 
                 <button onClick={this.handleTransferProduce}>Transfer Produce</button>
-                <button> Create Produce</button>
+                <button onClick={this.handleCreateProduce}> Create Produce</button>
                 <ol>
                     <button onClick={() => {
                         <div><Login/></div>
