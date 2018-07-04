@@ -10,16 +10,21 @@ import React, {Component} from 'react';
              state ={
                      createProduce:false,
                      cUserName:"",      //available in Login
-                     cProduceId:"",     // in GET reponse
+                     cProduceId:"",
                      cProduceType:"",
                      cProduceQuantity:"",
-                     cOwnerType:"",     // in GET reponse
-                     cOwnerId:""        // in GET reponse
+                     cOwnerType:"",     // in login
+                     cOwnerId:""        // in login
 
+             }
+
+             constructor(props) {
+             super(props);
              }
 
                onFormSubmit = (e) => {
                      e.preventDefault();
+                     let that = this;
                      let {cProduceType, cProduceQuantity, cProduceId} = this.state;
                      if(cProduceType.valueOf() !== "" && cProduceQuantity.valueOf() !== "" && cProduceId.valueOf() !== "" ){
 
@@ -27,7 +32,7 @@ import React, {Component} from 'react';
                      }
                  };
 
-                 handleProduceChange = (e) => {
+                 handleTypeChange = (e) => {
                      e.preventDefault();
                      this.setState({
                          cProduceType: e.target.value

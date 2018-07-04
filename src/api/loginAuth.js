@@ -3,7 +3,7 @@ const LOGIN = `http://pds-blockchain.mybluemix.net/login`;
 let loginCheck = function (userName, password, category) {
     let hardCredentials = {
         "credentials":{
-            "userName":"farmer@poc",
+            "userName":"farmer2@poc",
             "password":"poc@1234"
         }
     };
