@@ -49,24 +49,19 @@ class Login extends React.Component {
         return (
             <div className ="loginFormCenter">
                 <form onSubmit={this.onFormSubmit} >
-                    <p >
-                        <input className = "loginBoxes"
+                    <input className = "loginBoxes"
                             type="text"
                             value={userName}
                             placeholder="Enter the username"
                             onChange={this.handleUserChange}
                         />
-                    </p>
-                    <p>
-                        <input className = "loginBoxes"
+                    <input className = "loginBoxes"
                             type="password"
                             value={password}
                             onChange={this.handlePassChange}
                             placeholder="Enter the password"
                         />
-                    </p>
-                    <p >
-                        <select className = "loginBoxes"
+                    <select className = "loginBoxes"
                             value={category}
                             onChange={this.handleCateChange}
                         >
@@ -78,10 +73,9 @@ class Login extends React.Component {
                             <option value="fps">Fair price shop</option>
                             <option value="consumer">Consumer</option>
                         </select>
-                    </p>
-                    <div  >
+                    
                         <button className="loginButton" >Login</button>
-                    </div>
+                   
                 </form>
                 <projectFlow/>
 

@@ -58,7 +58,7 @@ text-align: left;
 .td {
     text-align: left;
     padding: 8px;
-     border: 2px solid #FFFF;
+    border: 2px solid #FFFF;
 
 }
 .tdData {
@@ -69,23 +69,24 @@ text-align: left;
 }
 
 .inputForm{
-position:absolute;
-top:50%;
-left:50%;
-transform: translate(-50%,-50%);
-width:350px;
-min-height:200px;
-background:#4facff;
-border-radius:10px;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    padding: 20px;
+    background: #3cff;
+    border-radius: 10px;
 
 }
 
 .inputBoxes {
-     margin: auto 0 auto 65px;
+    margin: auto 0 auto 65px;
     width: 50%;
     border: 1px solid Blue;
     padding: 10px;
     border-radius:5px;
+    margin-bottom: 20px;
 }
 
 .inputFormCenter {
@@ -95,13 +96,14 @@ border-radius:10px;
 }
 
 .addButton {
-
-     vertical-align: text-top;
-    background-color: ;
-    border-radius:4px;
-    text-align: center;
-    font-size: 15px;
-     margin: auto 0 auto 65px;
+  vertical-align: text-top;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 5px 15px;
+  position: relative;
+  left: 25%;
 }
 
 

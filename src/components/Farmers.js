@@ -19,8 +19,7 @@ class Farmers extends Component {
         ownerName: '',
         ownerType: '',
         transferCategory: '',
-        produceid: '',
-        dashBoardData:''
+        produceid: ''
     };
 
 
@@ -37,14 +36,10 @@ class Farmers extends Component {
             .then(res => {
                 //console.log(res.data[0].quantity);
                 // console.log(this.props.id)
-                console.log(res.data.length )
-
                 this.setState({
                     isGetAll: true,
-                    login:false,
                     transferProduce: false,
                     createProduce:false,
-                    dashBoardData:res.data,
                     foodQuantity: res.data[0].quantity,
                     foodType: res.data[0].type,
                     ownerName: this.props.name,
@@ -62,14 +57,6 @@ class Farmers extends Component {
 
     };
 
-    handleLogout = () => {
-
-            this.setState({
-                login: true
-            });
-
-        };
-
     handleCreateProduce = () => {
 
             this.setState({
@@ -77,6 +64,14 @@ class Farmers extends Component {
             });
 
         };
+
+        handleLogout = () => {
+
+                    this.setState({
+                        login: true
+                    });
+
+                };
 
     render() {
 
@@ -90,6 +85,14 @@ class Farmers extends Component {
                 </div>
             )
         }
+        if(this.state.login)
+                                {
+                                    return (
+                                        <div>
+                                            <Home/>
+                                        </div>
+                                    )
+                                }
 
         if(this.state.createProduce)
                 {
@@ -99,29 +102,17 @@ class Farmers extends Component {
                         </div>
                     )
                 }
-                 if(this.state.login)
-                        {
-                            return (
-                                <div>
-                                    <Home/>
-                                </div>
-                            )
-                        }
         return (
             //console.log(ownerName);
-
-
             <div className="body">
                 <h1>You are logged in as {this.props.text}</h1>
                 <h3> Items present in your inventory</h3>
-
                 <table className="table">
                     <tr className="td">
                         <th>Owner Name</th>
                         <th>Owner Type</th>
                         <th>Food Type</th>
                         <th>Quantity</th>
-                         <th>Produce Id</th>
 
                     </tr>
                     <tr className="tdData">
@@ -129,7 +120,6 @@ class Farmers extends Component {
                         <td>{this.state.ownerType}</td>
                         <td>{this.state.foodType}</td>
                         <td>{this.state.foodQuantity}</td>
-                        <td>{this.state.produceID}</td>
 
                     </tr>
                 </table>
@@ -152,9 +142,8 @@ class Farmers extends Component {
                 <button onClick={this.handleTransferProduce}>Transfer Produce</button>
                 <button onClick={this.handleCreateProduce}> Create Produce</button>
                 <ol>
-                    <button onClick={this.handleLogout}>Logout
-                    </button>
-
+                     <button onClick={this.handleLogout}>Logout
+                                        </button>
                 </ol>
 
 

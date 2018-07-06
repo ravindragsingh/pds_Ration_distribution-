@@ -1,80 +1,100 @@
 .App {
- margin:0px;
- padding:0px;
- font-family:sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
 
- }
+body {
+  background-image: url("./images/blockchain.jpg");
+}
 
-.loginForm{
-position:absolute;
-top:50%;
-left:50%;
-transform: translate(-50%,-50%);
-width:350px;
-min-height:200px;
-background:#3cff;
-border-radius:10px;
-
+.loginForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    padding: 20px;
+    background: #3cff;
+    border-radius: 10px;
 }
 
 .loginBoxes {
-    margin: auto auto auto 65px;
+    margin: auto auto auto 15px;
     width: 50%;
     border: 1px solid Red;
     padding: 10px;
-    border-radius:5px;
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto;
+}
+
+select.loginBoxes {
+  height: 25px;
 }
 
 .loginFormCenter {
     margin: auto 0 auto auto;
     width: 100%;
-    padding: 10px;
 }
 
 .loginButton {
-
-     vertical-align: text-top;
-    background-color: ;
-    border-radius:4px;
+    vertical-align: text-top;
+    border-radius: 4px;
     text-align: center;
     font-size: 15px;
-     margin: auto 0 auto 115px ;
+    margin: auto 0 auto;
+    padding: 5px 15px;
+    position: relative;
+    left: 39%;
 }
 
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
-h1, h2, h3, h4, h5, h6, a {
-  margin:0; padding:0;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    margin: 0;
+    padding: 0;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-    color:#fff;
-    text-align:center;
-    font-size:300%;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 300%;
 }
 
 .appHeader {
-color:#Black;
-  text-align:center;
-
+    color: #Black;
+    text-align: center;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
-
