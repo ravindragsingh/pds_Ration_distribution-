@@ -8,6 +8,7 @@ import axios from 'axios';
 import TransferProduce from "./TransferProduce";
 import CreateProduce from "./CreateProduce";
 import Home from "../App.js";
+import logo from '../logo.svg';
 
 class Farmers extends Component {
 
@@ -104,58 +105,67 @@ class Farmers extends Component {
         return (
             //console.log(ownerName);
 
+         <div>
+                    <header className="appHeader">
+                                                            <img src={logo} className="App-logo" alt="logo"/>
+                                                            <AppBar text="Blockchain Based Ration Distribution System"/>
+                                                            <h1 className="App-title"></h1>
+                                                        </header>
 
-            <div className="body">
-                <div className="titleSection">
-                    <p className="loginInfo">You are logged in as <span>{this.props.text}</span> <a onClick={this.handleLogout}>Logout </a></p>
-                    <h3> Items present in your inventory</h3>
-                </div>
-                
-
-                <div className="tableSection">
-                    <table className="table">
-                    <tr className="td">
-                        <th>Owner Name</th>
-                        <th>Owner Type</th>
-                        <th>Food Type</th>
-                        <th>Quantity</th>
-                         <th>Produce Id</th>
-
-                    </tr>
-                    <tr className="tdData">
-                        <td>{this.state.ownerName}</td>
-                        <td>{this.state.ownerType}</td>
-                        <td>{this.state.foodType}</td>
-                        <td>{this.state.foodQuantity}</td>
-                        <td>{this.state.produceID}</td>
-
-                    </tr>
-                </table>
-                </div>
-               <div className="actionSection">
-                        <button className="actionItems">Select to transfer goods</button>
-                        <select className="actionItems" value={transferCategory}>
-                            <option value="none">Select category</option>
-                            <option value="farmer">Farmer</option>
-                            <option value="procurement">Procurement</option>
-                            <option value="storage">Storage</option>
-                            <option value="distributor">Distributor</option>
-                            <option value="fps">Fair price shop</option>
-                            <option value="consumer">Consumer</option>
-                        </select>
-
-                        <button className="actionItems" onClick={this.handleTransferProduce}>Transfer Produce</button>
-                        <button className="actionItems" onClick={this.handleCreateProduce}> Create Produce</button>
-
-                <button className="actionItems" onClick={this.handleLogout}>Logout
-                                                    </button>
-               </div>
-
-                
+                     <div className="body">
+                                    <div className="titleSection">
+                                        <p className="loginInfo">You are logged in as <span>{this.props.text}</span> <a onClick={this.handleLogout}>Logout </a></p>
+                                        <h3> Items present in your inventory</h3>
+                                    </div>
 
 
+                                    <div className="tableSection">
+                                        <table className="table">
+                                        <tr className="td">
+                                            <th>Owner Name</th>
+                                            <th>Owner Type</th>
+                                            <th>Food Type</th>
+                                            <th>Quantity</th>
+                                             <th>Produce Id</th>
 
-            </div>
+                                        </tr>
+                                        <tr className="tdData">
+                                            <td>{this.state.ownerName}</td>
+                                            <td>{this.state.ownerType}</td>
+                                            <td>{this.state.foodType}</td>
+                                            <td>{this.state.foodQuantity}</td>
+                                            <td>{this.state.produceID}</td>
+
+                                        </tr>
+                                    </table>
+                                    </div>
+                                   <div className="actionSection">
+                                            <button className="actionItems">Select to transfer goods</button>
+                                            <select className="actionItems" value={transferCategory}>
+                                                <option value="none">Select category</option>
+                                                <option value="farmer">Farmer</option>
+                                                <option value="procurement">Procurement</option>
+                                                <option value="storage">Storage</option>
+                                                <option value="distributor">Distributor</option>
+                                                <option value="fps">Fair price shop</option>
+                                                <option value="consumer">Consumer</option>
+                                            </select>
+
+                                            <button className="actionItems" onClick={this.handleTransferProduce}>Transfer Produce</button>
+                                            <button className="actionItems" onClick={this.handleCreateProduce}> Create Produce</button>
+
+                                    <button className="actionItems" onClick={this.handleLogout}>Logout
+                                                                        </button>
+                                   </div>
+
+
+
+
+
+                                </div>
+                    </div>
+
+
 
         )
     }

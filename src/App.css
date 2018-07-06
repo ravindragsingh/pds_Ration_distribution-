@@ -15,14 +15,14 @@ body {
     transform: translate(-50%, -50%);
     width: 35%;
     padding: 20px;
-    background: #3cff;
+
     border-radius: 10px;
 }
 
 .loginBoxes {
     margin: auto auto auto 15px;
     width: 50%;
-    border: 1px solid Red;
+    border: 1px solid Blue;
     padding: 10px;
     border-radius: 5px;
     display: block;

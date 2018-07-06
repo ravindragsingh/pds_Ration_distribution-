@@ -5,6 +5,7 @@ import React, {Component} from 'react';
              //import getAllProduce from '../api/getAllProduce';
              import axios from 'axios';
              import createProduce from '../api/postCreateProduce';
+             import logo from '../logo.svg';
 
              class CreateProduce extends Component {
 
@@ -65,43 +66,54 @@ import React, {Component} from 'react';
 
                      return (
 
-                         <div className="inputForm">
-                            <div className = "subHeading" >
-                                <AppBar text = "Create Produce"/>
-                            </div>
 
-                            <div className="formSection">
-                                <form onSubmit={this.onFormSubmit}>
-                                <input className = "inputBoxes"
-                                        type="type"
-                                        value={cProduceType}
-                                        placeholder="Enter the produce Type"
-                                        onChange={this.handleTypeChange}
-                                    />
+                    <div>
+                    <header className="appHeader">
+                                        <img src={logo} className="App-logo" alt="logo"/>
+                                        <AppBar text="Blockchain Based Ration Distribution System"/>
+                                        <h1 className="App-title"></h1>
+                                    </header>
+                      <div className="inputForm">
+                                                <div className = "subHeading" >
+                                                    <AppBar text = "Create Produce"/>
+                                                </div>
 
-                                    <input className = "inputBoxes"
-                                         type="quantity"
-                                         value={cProduceQuantity}
-                                         onChange={this.handleQuantityChange}
-                                         placeholder="Enter the Produce Quantity"
-                                    />
+                                                <div className="formSection">
+                                                    <form onSubmit={this.onFormSubmit}>
+                                                    <input className = "inputBoxes"
+                                                            type="type"
+                                                            value={cProduceType}
+                                                            placeholder="Enter the produce Type"
+                                                            onChange={this.handleTypeChange}
+                                                        />
 
-                                <input className = "inputBoxes"
-                                         type="Id"
-                                         value={cProduceId}
-                                         onChange={this.handleIdChange}
-                                         placeholder="Enter the Produce Id"
-                                 />
-                                
+                                                        <input className = "inputBoxes"
+                                                             type="quantity"
+                                                             value={cProduceQuantity}
+                                                             onChange={this.handleQuantityChange}
+                                                             placeholder="Enter the Produce Quantity"
+                                                        />
 
-                                <div>
-                                    <button className="addButton">Click to add</button>
-                                </div>
-                            </form>
-                            </div>
+                                                    <input className = "inputBoxes"
+                                                             type="Id"
+                                                             value={cProduceId}
+                                                             onChange={this.handleIdChange}
+                                                             placeholder="Enter the Produce Id"
+                                                     />
 
 
-                         </div>
+                                                    <div>
+                                                        <button className="addButton">Click to add</button>
+                                                    </div>
+                                                </form>
+                                                </div>
+
+
+                                             </div>
+
+                    </div>
+
+
 
         )
     }
