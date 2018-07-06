@@ -19,7 +19,8 @@ class Farmers extends Component {
         ownerName: '',
         ownerType: '',
         transferCategory: '',
-        produceid: ''
+        produceid: '',
+        dashBoardData:''
     };
 
 
@@ -36,10 +37,14 @@ class Farmers extends Component {
             .then(res => {
                 //console.log(res.data[0].quantity);
                 // console.log(this.props.id)
+                console.log(res.data.length )
+
                 this.setState({
                     isGetAll: true,
+                    login:false,
                     transferProduce: false,
                     createProduce:false,
+                    dashBoardData:res.data,
                     foodQuantity: res.data[0].quantity,
                     foodType: res.data[0].type,
                     ownerName: this.props.name,
@@ -57,6 +62,14 @@ class Farmers extends Component {
 
     };
 
+    handleLogout = () => {
+
+            this.setState({
+                login: true
+            });
+
+        };
+
     handleCreateProduce = () => {
 
             this.setState({
@@ -65,14 +78,6 @@ class Farmers extends Component {
 
         };
 
-        handleLogout = () => {
-
-                    this.setState({
-                        login: true
-                    });
-
-                };
-
     render() {
 
         let {transferCategory} = this.state;
@@ -80,39 +85,41 @@ class Farmers extends Component {
         if(this.state.transferProduce)
         {
             return (
-                <div>
-                    <TransferProduce produceID={this.state.produceID} ownerName={this.state.ownerName} ownerType={this.state.ownerType}/>
-                </div>
+                <TransferProduce produceID={this.state.produceID} ownerName={this.state.ownerName} ownerType={this.state.ownerType}/>
             )
         }
-        if(this.state.login)
-                                {
-                                    return (
-                                        <div>
-                                            <Home/>
-                                        </div>
-                                    )
-                                }
 
         if(this.state.createProduce)
                 {
                     return (
-                        <div>
-                            <CreateProduce userName={this.props.name} ownerId={this.props.id} ownerType={this.props.text}/>
-                        </div>
+                        <CreateProduce userName={this.props.name} ownerId={this.props.id} ownerType={this.props.text}/>
                     )
                 }
+                 if(this.state.login)
+                        {
+                            return (
+                                <Home/>
+                            )
+                        }
         return (
             //console.log(ownerName);
+
+
             <div className="body">
-                <h1>You are logged in as {this.props.text}</h1>
-                <h3> Items present in your inventory</h3>
-                <table className="table">
+                <div className="titleSection">
+                    <p className="loginInfo">You are logged in as <span>{this.props.text}</span> <a onClick={this.handleLogout}>Logout </a></p>
+                    <h3> Items present in your inventory</h3>
+                </div>
+                
+
+                <div className="tableSection">
+                    <table className="table">
                     <tr className="td">
                         <th>Owner Name</th>
                         <th>Owner Type</th>
                         <th>Food Type</th>
                         <th>Quantity</th>
+                         <th>Produce Id</th>
 
                     </tr>
                     <tr className="tdData">
@@ -120,31 +127,32 @@ class Farmers extends Component {
                         <td>{this.state.ownerType}</td>
                         <td>{this.state.foodType}</td>
                         <td>{this.state.foodQuantity}</td>
+                        <td>{this.state.produceID}</td>
 
                     </tr>
                 </table>
-                <ol>
-                    <button>Select to transfer goods</button>
-                    <select
-                        value={transferCategory}
-                    >
-                        <option value="none">Select category</option>
-                        <option value="farmer">Farmer</option>
-                        <option value="procurement">Procurement</option>
-                        <option value="storage">Storage</option>
-                        <option value="distributor">Distributor</option>
-                        <option value="fps">Fair price shop</option>
-                        <option value="consumer">Consumer</option>
-                    </select>
+                </div>
+               <div className="actionSection">
+                        <button className="actionItems">Select to transfer goods</button>
+                        <select className="actionItems" value={transferCategory}>
+                            <option value="none">Select category</option>
+                            <option value="farmer">Farmer</option>
+                            <option value="procurement">Procurement</option>
+                            <option value="storage">Storage</option>
+                            <option value="distributor">Distributor</option>
+                            <option value="fps">Fair price shop</option>
+                            <option value="consumer">Consumer</option>
+                        </select>
 
-                </ol>
+                        <button className="actionItems" onClick={this.handleTransferProduce}>Transfer Produce</button>
+                        <button className="actionItems" onClick={this.handleCreateProduce}> Create Produce</button>
 
-                <button onClick={this.handleTransferProduce}>Transfer Produce</button>
-                <button onClick={this.handleCreateProduce}> Create Produce</button>
-                <ol>
-                     <button onClick={this.handleLogout}>Logout
-                                        </button>
-                </ol>
+                <button className="actionItems" onClick={this.handleLogout}>Logout
+                                                    </button>
+               </div>
+
+                
+
 
 
             </div>

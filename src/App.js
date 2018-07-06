@@ -33,22 +33,20 @@ class App extends Component {
                 type: data.type,
                 userID: data.userID
             });
-              });
+        });
     };
 
     render() {
 
             if (this.state.isAuthenticated === true) {
-                        console.log("isAUthenticated check");
+            console.log("isAUthenticated check");
 
-//                      console.log(this.state.userID); this gives userID returned from POST service
-                     return(
-                     <div>
-                      <Farmers text = {this.state.type} name = {this.state.userName} id = {this.state.userID}/>
-                     </div>
-                     )
+            //console.log(this.state.userID); this gives userID returned from POST service
+             return(
+                <Farmers text = {this.state.type} name = {this.state.userName} id = {this.state.userID}/>
+             )
 
-                    }
+            }
         else return (
             <div className="App" >
 

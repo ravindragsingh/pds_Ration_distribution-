@@ -70,34 +70,35 @@ import React, {Component} from 'react';
                                 <AppBar text = "Create Produce"/>
                             </div>
 
-                            <form onSubmit={this.onFormSubmit}>
-                                                <p>
-                                                    <input className = "inputBoxes"
-                                                        type="type"
-                                                        value={cProduceType}
-                                                        placeholder="Enter the produce Type"
-                                                        onChange={this.handleTypeChange}
-                                                    />
+                            <div className="formSection">
+                                <form onSubmit={this.onFormSubmit}>
+                                <input className = "inputBoxes"
+                                        type="type"
+                                        value={cProduceType}
+                                        placeholder="Enter the produce Type"
+                                        onChange={this.handleTypeChange}
+                                    />
 
-                                                    <input className = "inputBoxes"
-                                                         type="quantity"
-                                                         value={cProduceQuantity}
-                                                         onChange={this.handleQuantityChange}
-                                                         placeholder="Enter the Produce Quantity"
-                                                    />
+                                    <input className = "inputBoxes"
+                                         type="quantity"
+                                         value={cProduceQuantity}
+                                         onChange={this.handleQuantityChange}
+                                         placeholder="Enter the Produce Quantity"
+                                    />
 
-                                                <input className = "inputBoxes"
-                                                         type="Id"
-                                                         value={cProduceId}
-                                                         onChange={this.handleIdChange}
-                                                         placeholder="Enter the Produce Id"
-                                                 />
-                                                </p>
+                                <input className = "inputBoxes"
+                                         type="Id"
+                                         value={cProduceId}
+                                         onChange={this.handleIdChange}
+                                         placeholder="Enter the Produce Id"
+                                 />
+                                
 
-                                                <div>
-                                                    <button className="addButton">Click to add</button>
-                                                </div>
-                                            </form>
+                                <div>
+                                    <button className="addButton">Click to add</button>
+                                </div>
+                            </form>
+                            </div>
 
 
                          </div>

@@ -56,7 +56,8 @@ class TransferProduce extends Component {
             <div className="inputForm">
                 <AppBar text = "Transfer Produce"/>
                 <form onSubmit={this.onFormSubmit}>
-                    <input className = "inputBoxes"
+                    <div className="formInputs">
+                        <input className = "inputBoxes"
                             type="quantity"
                             value={tNewOwnerID}
                             onChange={this.handleOwnerID}
@@ -68,6 +69,7 @@ class TransferProduce extends Component {
                             onChange={this.handleOwnerType}
                             placeholder="Enter the New Owner Type"
                         />
+                    </div>
                         <button className="addButton">Click to Transfer</button>
                 </form>
             </div>
