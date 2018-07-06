@@ -38,52 +38,48 @@ class App extends Component {
 
     render() {
 
-            if (this.state.isAuthenticated === true) {
-                        console.log("isAUthenticated check");
+                       if (this.state.isAuthenticated === true) {
+                                    console.log("isAUthenticated check");
 
-//                      console.log(this.state.userID); this gives userID returned from POST service
-                     return(
-                     <div>
-                      <Farmers text = {this.state.type} name = {this.state.userName} id = {this.state.userID}/>
-                     </div>
-                     )
+            //                      console.log(this.state.userID); this gives userID returned from POST service
+                                 return(
+                                 <div>
+                                  <Farmers text = {this.state.type} name = {this.state.userName} id = {this.state.userID}/>
+                                 </div>
+                                 )
 
-                    }
-        else return (
-            <div className="App" >
+                                }
+                    else return (
+                        <div className="App" >
 
-                <header className="appHeader">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <AppBar text="Blockchain Based Ration Distribution System"/>
-                    <h1 className="App-title"></h1>
-                </header>
-                <p className="App-intro">
-                </p>
-                <Switch>
-                    <Route exact path="/" key='1'
-                           render={
-                               () => {
-                                   return (
-                                       <div className ="loginForm">
-                                           <Login onEvent={this.loginValidation}/>
-                                       </div>
-                                   )
-                               }
-                           }
-                    />
-                    <Route path="/farmer" key='2' component={Farmers}/>
-                    <Route path="/createProduce" key='3' component={CreateProduce}/>
-                    <Route path="/transferProduce" key='4' component={TransferProduce}/>
-                </Switch>
-                <div>
-                    <br>
-                    </br>
+                            <header className="appHeader">
+                                <img src={logo} className="App-logo" alt="logo"/>
+                                <AppBar text="Blockchain Based Ration Distribution System"/>
+                                <h1 className="App-title"></h1>
+                            </header>
+                            <p className="App-intro">
+                            </p>
+                            <Switch>
+                                <Route exact path="/" key='1'
+                                       render={
+                                           () => {
+                                               return (
+                                                   <div className ="loginForm">
+                                                       <Login onEvent={this.loginValidation}/>
+                                                   </div>
+                                               )
+                                           }
+                                       }
+                                />
+                                <Route path="/farmer" key='2' component={Farmers}/>
+                                <Route path="/createProduce" key='3' component={CreateProduce}/>
+                                <Route path="/transferProduce" key='4' component={TransferProduce}/>
+                            </Switch>
+                           </div>
 
-                </div>
-            </div>
+                    );
+                }
 
-        );
-    }
-}
+          }
 
 export default App;
