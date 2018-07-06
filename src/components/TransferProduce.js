@@ -3,13 +3,15 @@ import './comp.css';
 import transferProduce from '../api/postTransferProduce';
 import AppBar from './AppBar'
   import logo from '../logo.svg';
+  import Home from "../App.js";
 
 class TransferProduce extends Component {
 
     state = {
         transferProduce: false,   // in GET reponse
         tNewOwnerID: "",
-        tNewOwnerType: ""
+        tNewOwnerType: "",
+         login:false
     };
 
     constructor(props) {
@@ -29,7 +31,14 @@ class TransferProduce extends Component {
         }
     };
 
-    handleOwnerID = (e) => {
+    handleLogout = () => {
+
+               this.setState({
+                   login: true
+               });
+
+           };
+            handleOwnerID = (e) => {
         e.preventDefault();
         this.setState({
             tNewOwnerID: e.target.value
@@ -53,6 +62,13 @@ class TransferProduce extends Component {
                 </div>);
         }
 
+        if (this.state.login) {
+                            return (
+                                <Home/>
+                            )
+                        }
+
+
         return (
 
          <div>
@@ -61,26 +77,35 @@ class TransferProduce extends Component {
                                                 <AppBar text="Blockchain Based Ration Distribution System"/>
                                                 <h1 className="App-title"></h1>
                                             </header>
-            <div className="inputForm">
-                            <AppBar text = "Transfer Produce"/>
-                            <form onSubmit={this.onFormSubmit}>
-                                <div className="formInputs">
-                                    <input className = "inputBoxes"
-                                        type="quantity"
-                                        value={tNewOwnerID}
-                                        onChange={this.handleOwnerID}
-                                        placeholder="Enter the New Owner ID"
-                                    />
-                                    <input className = "inputBoxes"
-                                        type="quantity"
-                                        value={tNewOwnerType}
-                                        onChange={this.handleOwnerType}
-                                        placeholder="Enter the New Owner Type"
-                                    />
-                                </div>
-                                    <button className="addButton">Click to Transfer</button>
-                            </form>
-                        </div>
+                {transferProduce ? (<div className="actionItems"><p>Success Transfer Produce!</p>
+                                <button className="actionItems" onClick={this.handleLogout}>Logout
+                                                        </button>
+                                </div>) :(
+                                <div className="inputForm">
+                                                            <AppBar text = "Transfer Produce"/>
+                                                            <form onSubmit={this.onFormSubmit}>
+                                                                <div className="formInputs">
+                                                                    <input className = "inputBoxes"
+                                                                        type="quantity"
+                                                                        value={tNewOwnerID}
+                                                                        onChange={this.handleOwnerID}
+                                                                        placeholder="Enter the New Owner ID"
+                                                                    />
+                                                                    <input className = "inputBoxes"
+                                                                        type="quantity"
+                                                                        value={tNewOwnerType}
+                                                                        onChange={this.handleOwnerType}
+                                                                        placeholder="Enter the New Owner Type"
+                                                                    />
+                                                                </div>
+                                                                    <button className="addButton">Click to Transfer</button>
+                                                            </form>
+                                                        </div>
+
+                                )}
+
+
+
                      </div>
 
         )

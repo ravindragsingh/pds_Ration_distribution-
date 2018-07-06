@@ -87,18 +87,14 @@ class CreateProduce extends Component {
                     <h1 className="App-title"></h1>
                 </header>
                 {createProduce ? (<div className="actionItems"><p>Success Create Produce!</p>
-
                 <button className="actionItems" onClick={this.handleLogout}>Logout
                                         </button>
-
                 </div>) :
                     (<div>
-
                             <div className="inputForm">
                                 <div className="subHeading">
                                     <AppBar text="Create Produce"/>
                                 </div>
-
                                 <div className="formSection">
                                     <form onSubmit={this.onFormSubmit}>
                                         <input className="inputBoxes"
@@ -107,29 +103,23 @@ class CreateProduce extends Component {
                                                placeholder="Enter the produce Type"
                                                onChange={this.handleTypeChange}
                                         />
-
                                         <input className="inputBoxes"
                                                type="quantity"
                                                value={cProduceQuantity}
                                                onChange={this.handleQuantityChange}
                                                placeholder="Enter the Produce Quantity"
                                         />
-
                                         <input className="inputBoxes"
                                                type="Id"
                                                value={cProduceId}
                                                onChange={this.handleIdChange}
                                                placeholder="Enter the Produce Id"
                                         />
-
-
                                         <div>
                                             <button className="addButton">Click to add</button>
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                                    </form>                                </div>
+                            </div>                        </div>
                     )
                 }
             </div>
