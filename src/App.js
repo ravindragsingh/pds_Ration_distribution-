@@ -50,7 +50,7 @@ class App extends Component {
 
                     }
         else return (
-            <div className="App" style ={ { backgroundImage: "url('http://media2.govtech.com/images/940*654/cybersecurity+fingerprint.jpg')" } }>
+            <div className="App" >
 
                 <header className="appHeader">
                     <img src={logo} className="App-logo" alt="logo"/>
@@ -64,7 +64,7 @@ class App extends Component {
                            render={
                                () => {
                                    return (
-                                       <div>
+                                       <div className ="loginForm">
                                            <Login onEvent={this.loginValidation}/>
                                        </div>
                                    )

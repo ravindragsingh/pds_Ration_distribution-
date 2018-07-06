@@ -1,22 +1,67 @@
 .App {
-  text-align: center;
-  background-image: url("/images/1531.jpg")
+ margin:0px;
+ padding:0px;
+ font-family:sans-serif;
+ }
+
+.loginForm{
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width:350px;
+min-height:200px;
+background:#3cff;
+border-radius:10px;
+
 }
+
+.loginBoxes {
+    margin: auto auto auto 15px;
+    width: 50%;
+    border: 1px solid Red;
+    padding: 10px;
+    border-radius:5px;
+}
+
+.loginFormCenter {
+    margin: auto 0 auto auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.loginButton {
+
+     vertical-align: text-top;
+    background-color: ;
+    border-radius:4px;
+    text-align: center;
+    font-size: 15px;
+     margin: auto 0 auto ;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+}
+h1, h2, h3, h4, h5, h6, a {
+  margin:0; padding:0;
 }
 
 .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
+    color:#fff;
+    text-align:center;
+    font-size:300%;
 }
 
 .appHeader {
-color: white;
+color:#Black;
+  text-align:center;
+
 }
 
 .App-title {
@@ -32,13 +77,3 @@ color: white;
   to { transform: rotate(360deg); }
 }
 
-.button {
-    background-color: #900000; /* Green */
-    border: #60090;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}

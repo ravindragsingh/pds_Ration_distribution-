@@ -65,24 +65,28 @@ import React, {Component} from 'react';
 
                      return (
 
-                         <div className="body">
+                         <div className="inputForm">
+                            <div className = "subHeading" >
+                                <AppBar text = "Create Produce"/>
+                            </div>
+
                             <form onSubmit={this.onFormSubmit}>
                                                 <p>
-                                                    <input
+                                                    <input className = "inputBoxes"
                                                         type="type"
                                                         value={cProduceType}
                                                         placeholder="Enter the produce Type"
                                                         onChange={this.handleTypeChange}
                                                     />
 
-                                                    <input
+                                                    <input className = "inputBoxes"
                                                          type="quantity"
                                                          value={cProduceQuantity}
                                                          onChange={this.handleQuantityChange}
                                                          placeholder="Enter the Produce Quantity"
                                                     />
 
-                                                <input
+                                                <input className = "inputBoxes"
                                                          type="Id"
                                                          value={cProduceId}
                                                          onChange={this.handleIdChange}
@@ -91,7 +95,7 @@ import React, {Component} from 'react';
                                                 </p>
 
                                                 <div>
-                                                    <button className="button">Click to add</button>
+                                                    <button className="addButton">Click to add</button>
                                                 </div>
                                             </form>
 

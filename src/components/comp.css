@@ -2,6 +2,11 @@
   text-align: left;
 }
 
+.subHeading {
+text-align: left;
+ font-size: 20px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -62,4 +67,41 @@
      border: 2px solid #FFFF;
      background-color: #f2f2f2
 }
+
+.inputForm{
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width:350px;
+min-height:200px;
+background:#4facff;
+border-radius:10px;
+
+}
+
+.inputBoxes {
+     margin: auto 0 auto 65px;
+    width: 50%;
+    border: 1px solid Blue;
+    padding: 10px;
+    border-radius:5px;
+}
+
+.inputFormCenter {
+    margin: auto 0 auto 65px;
+    width: 100%;
+    padding: 10px;
+}
+
+.addButton {
+
+     vertical-align: text-top;
+    background-color: ;
+    border-radius:4px;
+    text-align: center;
+    font-size: 15px;
+     margin: auto 0 auto 65px;
+}
+
 

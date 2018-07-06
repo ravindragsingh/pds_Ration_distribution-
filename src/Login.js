@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './App.css';
+import projectFlow from './images/Flow_A.gif';
 
 class Login extends React.Component {
 
@@ -46,10 +47,10 @@ class Login extends React.Component {
         let {userName, password, category} = this.state;
 
         return (
-            <div>
-                <form onSubmit={this.onFormSubmit}>
-                    <p>
-                        <input
+            <div className ="loginFormCenter">
+                <form onSubmit={this.onFormSubmit} >
+                    <p >
+                        <input className = "loginBoxes"
                             type="text"
                             value={userName}
                             placeholder="Enter the username"
@@ -57,15 +58,15 @@ class Login extends React.Component {
                         />
                     </p>
                     <p>
-                        <input
+                        <input className = "loginBoxes"
                             type="password"
                             value={password}
                             onChange={this.handlePassChange}
                             placeholder="Enter the password"
                         />
                     </p>
-                    <p>
-                        <select
+                    <p >
+                        <select className = "loginBoxes"
                             value={category}
                             onChange={this.handleCateChange}
                         >
@@ -78,10 +79,12 @@ class Login extends React.Component {
                             <option value="consumer">Consumer</option>
                         </select>
                     </p>
-                    <div>
-                        <button className="button">Login</button>
+                    <div  >
+                        <button className="loginButton" >Login</button>
                     </div>
                 </form>
+                <projectFlow/>
+
             </div>
         )
     }

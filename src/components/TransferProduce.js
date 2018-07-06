@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './comp.css';
 import transferProduce from '../api/postTransferProduce';
+import AppBar from './AppBar'
 
 class TransferProduce extends Component {
 
@@ -52,16 +53,17 @@ class TransferProduce extends Component {
         }
 
         return (
-            <div className="body">
+            <div className="inputForm">
+                <AppBar text = "Transfer Produce"/>
                 <form onSubmit={this.onFormSubmit}>
                     <p>
-                        <input
+                        <input className = "inputBoxes"
                             type="quantity"
                             value={tNewOwnerID}
                             onChange={this.handleOwnerID}
                             placeholder="Enter the New Owner ID"
                         />
-                        <input
+                        <input className = "inputBoxes"
                                                     type="quantity"
                                                     value={tNewOwnerType}
                                                     onChange={this.handleOwnerType}
@@ -70,7 +72,7 @@ class TransferProduce extends Component {
                     </p>
 
                     <div>
-                        <button className="button">Click to Transfer</button>
+                        <button className="addButton">Click to Transfer</button>
                     </div>
                 </form>
             </div>
