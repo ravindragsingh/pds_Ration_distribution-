@@ -116,23 +116,23 @@ class Farmers extends Component {
                             onClick={this.handleLogout}>Logout </a></p>
                         <h3> Items present in your inventory</h3>
                     </div>
-                    <div className="tableSection">
-                        <table className="table">
-                            <tr className="td">
-                                <th>Owner Name</th>
-                                <th>Owner Type</th>
-                                <th>Food Type</th>
-                                <th>Quantity</th>
-                                <th>Produce Id</th>
-                            </tr>
-                            <tr className="td">
-                            {dashBoardData.map((produce, key)=>{
-                              return <FarmerList key={key} produce={produce}/>
-                              })}
-                            </tr>
+                   <div className="tableSection">
+                                           <table className="table">
+                                               <thead>
+                                                  <tr className="td">
+                                                       <th>Owner Name</th>
+                                                       <th>Owner Type</th>
+                                                       <th>Food Type</th>
+                                                       <th>Quantity</th>
+                                                       <th>Produce Id</th>
+                                                   </tr>
+                                               </thead>
+                                               {dashBoardData.map((produce, key)=>{
+                                                 return <FarmerList key={key} produce={produce}/>
+                                                 })}
 
-                        </table>
-                    </div>
+                                           </table>
+                                       </div>
                     <div className="actionSection">
                         <button className="actionItems">Select to transfer goods</button>
                         <select className="actionItems" value={transferCategory}>
