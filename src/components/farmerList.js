@@ -8,13 +8,13 @@ class farmerList extends Component {
         console.log(this.props.produce);
         return (
 
-            <tbody>
+             <tbody>
                             <tr className="td">
-                                <td>{owner.name}</td>
-                                <td>{owner.type}</td>
-                                <td>{type}</td>
-                                <td>{quantity}</td>
-                                <td>{produceid}</td>
+                                <td className ="tdData">{owner.name}</td>
+                                <td className ="tdData">{owner.type}</td>
+                                <td className ="tdData">{type}</td>
+                                <td className ="tdData">{quantity}</td>
+                                <td className ="tdData">{produceid}</td>
                             </tr>
                         </tbody>
         )

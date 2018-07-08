@@ -1,8 +1,9 @@
 import React from 'react';
 
 import './App.css';
-import projectFlow from './images/Flow_A.gif';
+
 import logo from './logo.svg';
+import projectFlow from './images/projectFlow.gif';
 
 class Login extends React.Component {
 
@@ -78,9 +79,9 @@ class Login extends React.Component {
                         </select>
 
                         <button className="loginButton" >Login</button>
-
+                         <projectFlow/>
                 </form>
-                <projectFlow/>
+
 
             </div>
         )

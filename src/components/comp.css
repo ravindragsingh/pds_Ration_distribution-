@@ -100,6 +100,7 @@ text-align: left;
     border-collapse: collapse;
     width: 100%;
     border: 2px solid #FFFF;
+
 }
 
 .table tr:first-child {
@@ -115,12 +116,14 @@ text-align: left;
     padding: 8px;
     border: 2px solid #FFFF;
 
+
 }
 .tdData {
     text-align: left;
     padding: 8px;
      border: 2px solid #FFFF;
-     background-color: #f2f2f2
+     background-color: #f2f2f2;
+     border: 1px solid black
 }
 
 .inputForm{

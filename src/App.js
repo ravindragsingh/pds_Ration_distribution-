@@ -4,7 +4,7 @@ import {Redirect} from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 import Login from './Login';
-import howitworks from './images/PDS1.PNG';
+
 import Farmers from './components/Farmers';
 import loginCheck from './api/loginAuth';
 import AppBar from './components/AppBar';
