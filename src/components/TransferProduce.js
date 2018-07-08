@@ -8,9 +8,10 @@ import AppBar from './AppBar'
 class TransferProduce extends Component {
 
     state = {
-        transferProduce: false,   // in GET reponse
+        tTransferProduce: false,   // in GET reponse
         tNewOwnerID: "",
         tNewOwnerType: "",
+        tProduceId:"",
          login:false
     };
 
@@ -21,11 +22,11 @@ class TransferProduce extends Component {
     onFormSubmit = (e) => {
         e.preventDefault();
         let that = this;
-        let { tNewOwnerID,tNewOwnerType} = this.state;
-        if (tNewOwnerID.valueOf() !== "" && tNewOwnerType.valueOf() !== "") {
+        let { tNewOwnerID,tNewOwnerType, tProduceId} = this.state;
+        if (tNewOwnerID.valueOf() !== "" && tNewOwnerType.valueOf() !== "" && tProduceId.valueOf() !== "") {
             transferProduce(this.props.ownerName, this.props.produceID, tNewOwnerType, tNewOwnerID).then((res) => {
                 that.setState({
-                    transferProduce: true,
+                    tTransferProduce: true,
                 });
             })
         }
@@ -50,17 +51,23 @@ class TransferProduce extends Component {
                 tNewOwnerType: e.target.value
             })
         };
+        handleProduceId = (e) => {
+                    e.preventDefault();
+                    this.setState({
+                        tProduceId: e.target.value
+                    })
+                };
 
     render() {
 
-        let {tNewOwnerID, tNewOwnerType} = this.state;
+        let {tNewOwnerID, tNewOwnerType, tProduceId, tTransferProduce} = this.state;
 
-        if(!transferProduce){
-            return (
-                <div>
-                    Transfer Succesfull!
-                </div>);
-        }
+//        if(!transferProduce){
+//            return (
+//                <div>
+//                    Transfer Succesfull!
+//                </div>);
+//        }
 
         if (this.state.login) {
                             return (
@@ -77,7 +84,7 @@ class TransferProduce extends Component {
                                                 <AppBar text="Blockchain Based Ration Distribution System"/>
                                                 <h1 className="App-title"></h1>
                                             </header>
-                {transferProduce ? (<div className="actionItems"><p>Success Transfer Produce!</p>
+                {tTransferProduce ? (<div className="actionItems"><p>Success Transfer Produce!</p>
                                 <button className="actionItems" onClick={this.handleLogout}>Logout
                                                         </button>
                                 </div>) :(
@@ -97,6 +104,12 @@ class TransferProduce extends Component {
                                                                         onChange={this.handleOwnerType}
                                                                         placeholder="Enter the New Owner Type"
                                                                     />
+                                                                    <input className = "inputBoxes"
+                                                                                        type="quantity"
+                                                                                        value={tProduceId}
+                                                                                        onChange={this.handleProduceId}
+                                                                                        placeholder="Enter the Produce ID"
+                                                                                    />
                                                                 </div>
                                                                     <button className="addButton">Click to Transfer</button>
                                                             </form>
