@@ -134,6 +134,12 @@ class Farmers extends Component {
                                            </table>
                                        </div>
                     <div className="actionSection">
+
+                    <div>
+                         <p>
+                         <button className="dummyActionItems">Accept Produce</button>
+                         </p>
+                    </div>
                         <button className="actionItems">Select to transfer goods</button>
                         <select className="actionItems" value={transferCategory}>
                             <option value="none">Select category</option>
