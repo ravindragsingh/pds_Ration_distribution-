@@ -87,7 +87,7 @@ class Farmers extends Component {
         if (this.state.transferProduce) {
             return (
                 <TransferProduce produceID={this.state.produceID} ownerName={this.state.ownerName}
-                                 ownerType={this.state.ownerType}/>
+                                 ownerType={this.state.ownerType} stateTransferProduce = {this.state.transferProduce}/>
             )
         }
 
@@ -149,7 +149,14 @@ class Farmers extends Component {
                         <button className="actionItems" onClick={this.handleCreateProduce}> Create Produce</button>
 
                         <button className="actionItems" onClick={this.handleLogout}>Logout
+
                         </button>
+
+                         <p>
+                                                     <button className="dummyActionItems" >Upload</button>
+                                                     <button className="dummyActionItems" >Verify</button>
+                                                     <button className="dummyActionItems" >Detect Fraud</button>
+                                                </p>
                     </div>
 
 

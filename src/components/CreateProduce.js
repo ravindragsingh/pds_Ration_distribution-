@@ -12,7 +12,7 @@ class CreateProduce extends Component {
 
     state = {
         login:false,
-                createProduce: false,
+                cCreateProduce: false,
         cUserName: "",      //available in Login
         cProduceId: "",
         cProduceType: "",
@@ -31,12 +31,12 @@ class CreateProduce extends Component {
         e.preventDefault();
         let that = this;
 
-        let {cProduceType, cProduceQuantity, cProduceId} = this.state;
+        let {cProduceType, cProduceQuantity, cProduceId,cCreateProduce} = this.state;
 
         if (cProduceType.valueOf() !== "" && cProduceQuantity.valueOf() !== "" && cProduceId.valueOf() !== "") {
             createProduce(this.props.userName, cProduceId, cProduceType, cProduceQuantity, this.props.ownerType, this.props.ownerId).then((res) => {
                 that.setState({
-                    createProduce: true,
+                    cCreateProduce: true,
                 });
             })
         }
@@ -71,7 +71,7 @@ class CreateProduce extends Component {
 
     render() {
 
-        let {cProduceType, cProduceQuantity, cProduceId, createProduce } = this.state;
+        let {cProduceType, cProduceQuantity, cProduceId, cCreateProduce } = this.state;
 
          if (this.state.login) {
                     return (
@@ -86,7 +86,7 @@ class CreateProduce extends Component {
                     <AppBar text="Blockchain Based Ration Distribution System"/>
                     <h1 className="App-title"></h1>
                 </header>
-                {createProduce ? (<div className="actionItems"><p>Success Create Produce!</p>
+                {cCreateProduce ? (<div className="actionItems"><p>Success Create Produce!</p>
                 <button className="actionItems" onClick={this.handleLogout}>Logout
                                         </button>
                 </div>) :

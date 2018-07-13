@@ -4,9 +4,9 @@ import transferProduce from '../api/postTransferProduce';
 import AppBar from './AppBar'
   import logo from '../logo.svg';
   import Home from "../App.js";
+  import Dashboard from "./Farmers.js"
 
 class TransferProduce extends Component {
-
     state = {
         tTransferProduce: false,   // in GET reponse
         tNewOwnerID: "",
@@ -14,11 +14,9 @@ class TransferProduce extends Component {
         tProduceId:"",
          login:false
     };
-
     constructor(props) {
         super(props);
     }
-
     onFormSubmit = (e) => {
         e.preventDefault();
         let that = this;
@@ -31,13 +29,10 @@ class TransferProduce extends Component {
             })
         }
     };
-
     handleLogout = () => {
-
                this.setState({
                    login: true
                });
-
            };
             handleOwnerID = (e) => {
         e.preventDefault();
@@ -57,27 +52,14 @@ class TransferProduce extends Component {
                         tProduceId: e.target.value
                     })
                 };
-
     render() {
-
         let {tNewOwnerID, tNewOwnerType, tProduceId, tTransferProduce} = this.state;
-
-//        if(!transferProduce){
-//            return (
-//                <div>
-//                    Transfer Succesfull!
-//                </div>);
-//        }
-
         if (this.state.login) {
                             return (
                                 <Home/>
                             )
                         }
-
-
         return (
-
          <div>
                             <header className="appHeader">
                                                 <img src={logo} className="App-logo" alt="logo"/>
@@ -114,15 +96,9 @@ class TransferProduce extends Component {
                                                                     <button className="addButton">Click to Transfer</button>
                                                             </form>
                                                         </div>
-
                                 )}
-
-
-
                      </div>
-
         )
     }
 }
-
 export default TransferProduce;

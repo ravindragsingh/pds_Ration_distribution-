@@ -3,7 +3,8 @@ import React from 'react';
 import './App.css';
 
 import logo from './logo.svg';
-import projectFlow from './images/projectFlow.gif';
+import ProjectFlow from './components/ProjectFlow';
+
 
 class Login extends React.Component {
 
@@ -52,6 +53,7 @@ class Login extends React.Component {
 
 
             <div className ="loginFormCenter">
+
                 <form onSubmit={this.onFormSubmit} >
                     <input className = "loginBoxes"
                             type="text"
@@ -79,8 +81,9 @@ class Login extends React.Component {
                         </select>
 
                         <button className="loginButton" >Login</button>
-                         <projectFlow/>
                 </form>
+
+                <ProjectFlow/>
 
 
             </div>
