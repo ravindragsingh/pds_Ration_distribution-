@@ -8,11 +8,9 @@ class ProjectFlow extends Component {
 
         return (
 
-
-
-                    <img id="myImg" src={projectFlow} alt="project" styles= "height: 10;width:100%;max-width:300px"/>
-
-
+            <div className="projectgif">
+        		<img id="myImg" src={projectFlow} alt="project" />
+        	</div>
         )
     }
 }

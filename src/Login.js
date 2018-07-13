@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 
 import logo from './logo.svg';
-import ProjectFlow from './components/ProjectFlow';
+
 
 
 class Login extends React.Component {
@@ -82,10 +82,6 @@ class Login extends React.Component {
 
                         <button className="loginButton" >Login</button>
                 </form>
-
-                <ProjectFlow/>
-
-
             </div>
         )
     }

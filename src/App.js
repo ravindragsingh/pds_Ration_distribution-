@@ -10,7 +10,7 @@ import loginCheck from './api/loginAuth';
 import AppBar from './components/AppBar';
 import CreateProduce from './components/CreateProduce';
 import TransferProduce from './components/TransferProduce';
-
+import ProjectFlow from './components/ProjectFlow';
 
 
 class App extends Component {
@@ -63,7 +63,8 @@ class App extends Component {
                                () => {
                                    return (
                                        <div className ="loginForm">
-                                           <Login onEvent={this.loginValidation}/>
+                                       <ProjectFlow/>
+                                             <Login onEvent={this.loginValidation}/>
                                        </div>
                                    )
                                }

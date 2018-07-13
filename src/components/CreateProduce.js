@@ -86,8 +86,8 @@ class CreateProduce extends Component {
                     <AppBar text="Blockchain Based Ration Distribution System"/>
                     <h1 className="App-title"></h1>
                 </header>
-                {cCreateProduce ? (<div className="actionItems"><p>Success Create Produce!</p>
-                <button className="actionItems" onClick={this.handleLogout}>Logout
+                {cCreateProduce ? (<div className="actionItemsSucess"><p>Success Create Produce!</p>
+                <button className="actionItemsSucessButton" onClick={this.handleLogout}>Logout
                                         </button>
                 </div>) :
                     (<div>

@@ -85,16 +85,21 @@ text-align: left;
   margin-right: 20px;
   margin-left: 20px;
   font-size: 13px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  height: 30px;
+  width: auto;
 }
 
 .dummyActionItems {
-  margin-right: 20px;
-  margin-left: 20px;
-  font-size: 13px;
-  color:solid Black;
-  background-color:Yellow;
-}
-
+   margin-right: 20px;
+   margin-left: 20px;
+   font-size: 13px;
+color: #000;
+ background-color: Yellow;
+  padding: 5px 20px;
+  border-radius: 5px;
+ }
 .formSection .inputBoxes {
   width: 65% !important;
 }
@@ -175,6 +180,26 @@ text-align: left;
 
 .formInputs .inputBoxes {
       width: 66% !important;
+}
+
+
+.actionItemsSucess {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  padding: 20px;
+  background: #3cff;
+  border-radius: 10px;
+}
+
+.actionItemsSucessButton {
+  margin: 0 auto;
+  display: block;
+  padding: 5px 20px;
+  font-size: 14px;
+  border-radius: 5px;
 }
 
 

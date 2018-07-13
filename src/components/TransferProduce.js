@@ -66,8 +66,8 @@ class TransferProduce extends Component {
                                                 <AppBar text="Blockchain Based Ration Distribution System"/>
                                                 <h1 className="App-title"></h1>
                                             </header>
-                {tTransferProduce ? (<div className="actionItems"><p>Success Transfer Produce!</p>
-                                <button className="actionItems" onClick={this.handleLogout}>Logout
+               {tTransferProduce ? (<div className="actionItemsSucess"><p>Success Transfer Produce!</p>
+                                               <button className="actionItemsSucessButton" onClick={this.handleLogout}>Logout
                                                         </button>
                                 </div>) :(
                                 <div className="inputForm">

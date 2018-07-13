@@ -4,20 +4,17 @@
     font-family: sans-serif;
 }
 
+.projectgif {
+    width: 70%;
+    display: inline-block;
+}
+
 body {
   background-image: url("./images/blockchain.jpg");
 }
-
 .loginForm {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 35%;
-    padding: 20px;
 
-    border-radius: 10px;
-}
+ }
 
 .loginBoxes {
     margin: auto auto auto 15px;
@@ -34,8 +31,13 @@ select.loginBoxes {
 }
 
 .loginFormCenter {
-    margin: auto 0 auto auto;
-    width: 100%;
+     width: 28%;
+       display: inline-block;
+       position: absolute;
+       top: 45%;
+           background: #3cff;
+       padding: 20px;
+       border-radius: 10px;
 }
 
 .loginButton {
